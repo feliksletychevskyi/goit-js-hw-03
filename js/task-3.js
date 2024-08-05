@@ -1,10 +1,9 @@
 function filterArray(numbers, value) {
     const totalArray = [];
-    for (let i = 0; i > value; i++) {
-        if (numbers > value) {
-            return totalArray.slice(-1);
+    for (let i = 0; i >= value; i++) {
+        if (value.includes(numbers[i])) {
+            return totalArray;
         }
-        return totalArray; 
     }
 }
 
